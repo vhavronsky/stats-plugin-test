@@ -1,0 +1,21 @@
+openapi: 3.1.0
+info:
+  title: Test Stats API
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      operationId: getHealth
+      summary: Health endpoint
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                required:
+                  - status

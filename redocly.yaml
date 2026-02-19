@@ -1,0 +1,17 @@
+extends:
+  - recommended
+
+apis:
+  main:
+    root: ./openapi.yaml
+
+stats:
+  fileExtensions: true
+  apis:
+    - name: main
+      path: ./openapi.yaml
+
+navbar:
+  items:
+    - page: /index.md
+      label: Home
