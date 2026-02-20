@@ -8,12 +8,10 @@ apis:
     root: ./openapi-secondary.yaml
 
 stats:
-  fileExtensions: false
+  fileExtensions: true
   apis:
-    - name: main-api
-      path: ./openapi.yaml
-    - name: secondary-api
-      path: ./openapi-secondary.yaml
+    - name: missing-api
+      path: ./does-not-exist.yaml
 
 navbar:
   items:
