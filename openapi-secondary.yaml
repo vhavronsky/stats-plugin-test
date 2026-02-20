@@ -14,6 +14,7 @@ tags:
 paths:
   /users:
     get:
+      security: []
       operationId: listUsers
       tags:
         - users
@@ -35,6 +36,7 @@ paths:
         schema:
           type: string
     get:
+      security: []
       operationId: getUser
       tags:
         - admin
