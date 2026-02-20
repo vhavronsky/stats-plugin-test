@@ -9,9 +9,6 @@ apis:
 
 stats:
   fileExtensions: true
-  apis:
-    - name: missing-api
-      path: ./does-not-exist.yaml
 
 navbar:
   items:
