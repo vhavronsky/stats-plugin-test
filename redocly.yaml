@@ -4,12 +4,14 @@ extends:
 apis:
   main:
     root: ./openapi.yaml
+  secondary:
+    root: ./openapi-secondary.yaml
 
 stats:
   fileExtensions: true
-  # apis:
-  #   - name: main
-  #     path: ./openapi.yaml
+  apis:
+    - name: primary-custom-name
+      path: ./openapi.yaml
 
 navbar:
   items:

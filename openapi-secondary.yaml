@@ -1,0 +1,60 @@
+openapi: 3.1.0
+servers:
+  - url: https://example.com
+info:
+  title: Test Stats API Secondary
+  version: 1.0.0
+  description: Secondary API used for stats filtering scenarios.
+externalDocs:
+  description: Extra docs
+  url: https://example.com/docs
+tags:
+  - name: users
+  - name: admin
+paths:
+  /users:
+    get:
+      operationId: listUsers
+      tags:
+        - users
+      summary: List users
+      responses:
+        '200':
+          description: List users response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+  /users/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      operationId: getUser
+      tags:
+        - admin
+      summary: Get user
+      responses:
+        '200':
+          description: User response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+        email:
+          type: string
+      required:
+        - id
+        - email
