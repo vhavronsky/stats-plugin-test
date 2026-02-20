@@ -10,8 +10,10 @@ apis:
 stats:
   fileExtensions: true
   apis:
-    - name: primary-custom-name
+    - name: main-api
       path: ./openapi.yaml
+    - name: secondary-api
+      path: ./openapi-secondary.yaml
 
 navbar:
   items:
