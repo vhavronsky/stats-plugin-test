@@ -8,7 +8,7 @@ apis:
     root: ./openapi-secondary.yaml
 
 stats:
-  fileExtensions: true
+  fileExtensions: false
   apis:
     - name: main-api
       path: ./openapi.yaml
