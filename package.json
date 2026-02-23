@@ -1,7 +1,7 @@
 {
     "name": "test-stats-plugin",
     "dependencies": {
-        "@redocly/realm": "0.0.0-20260220124658",
-        "@redocly/config": "0.0.0-20260220124658"
+        "@redocly/realm": "0.0.0-20260223101118",
+        "@redocly/config": "0.0.0-20260223101118"
     }
 }
