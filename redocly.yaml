@@ -9,9 +9,9 @@ apis:
 
 stats:
   fileExtensions: true
-  apis:
-    - name: test api
-      path: ./openapi.yaml
+#  apis:
+#    - name: test api
+#      path: ./openapi.yaml
 
 navbar:
   items:
