@@ -20,7 +20,7 @@ jobs:
           organization: 'testing_redocly'
           project: '11-vasyl-vlad-catchup'
           mountPath: '/products/api-hub/learning'
-          files: 'guide.md,learning.yaml'
+          files: 'guide.md learning.yaml'
           domain: 'https://app.cloud.redocly.com'
         env:
           REDOCLY_AUTHORIZATION: ${{ secrets.REDOCLY_AUTHORIZATION }}
