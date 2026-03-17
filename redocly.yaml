@@ -6,6 +6,8 @@ apis:
     root: ./openapi.yaml
   secondary:
     root: ./openapi-secondary.yaml
+  project:
+    root: ./docs/project-delivery.yaml
 
 stats:
   fileExtensions: true
