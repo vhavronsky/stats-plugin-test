@@ -11,11 +11,12 @@ apis:
 
 stats:
   fileExtensions: true
-  apis:
-    - name: test api
-      path: ./openapi.yaml
 
 navbar:
   items:
     - page: /index.md
       label: Home
+
+requiresLogin: true
+
+residency: https://app.lab6.blueharvest.cloud
