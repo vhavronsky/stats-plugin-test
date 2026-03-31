@@ -1,5 +1,5 @@
 {
-    "name": "test-stats-plugin",
+    "name": "test-stats-plugin-v2",
     "description": "Test stats plugin",
     "dependencies": {
         "@redocly/realm": "0.0.0-20260311062413",
