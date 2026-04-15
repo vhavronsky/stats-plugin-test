@@ -2,7 +2,7 @@
     "name": "test-stats-plugin-v2",
     "description": "Test stats plugin gh-side change",
     "dependencies": {
-        "@redocly/realm": "0.0.0-20260311062413",
-        "@redocly/config": "0.0.0-20260311062413"
+        "@redocly/realm": "0.0.0-20260415085130",
+        "@redocly/config": "0.0.0-20260415085130"
     }
 }
