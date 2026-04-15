@@ -1,5 +1,5 @@
 {
-    "name": "test-stats-plugin-v2",
+    "name": "test-stats-plugin-v3",
     "description": "Test stats plugin gh-side change",
     "dependencies": {
         "@redocly/realm": "0.0.0-20260415085130",
