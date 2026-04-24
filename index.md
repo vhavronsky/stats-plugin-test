@@ -6,3 +6,4 @@ This is a minimal Realm project used to validate stats collection.
 - It enables `stats.fileExtensions`.
 - It configures `stats.apis` with a named API.
 - Test 222 222
+- More testing
