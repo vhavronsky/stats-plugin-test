@@ -1,0 +1,17 @@
+- page: docs/index.md
+  label: Documentation
+  icon: book
+- group: Getting Started
+  expanded: true
+  icon: rocket
+  items:
+    - page: docs/getting-started/index.md
+      label: Introduction
+- group: Guides
+  expanded: true
+  icon: gear
+  items:
+    - page: docs/guides/worker-health.md
+      label: Worker Health
+    - page: docs/guides/user-management.md
+      label: User Management

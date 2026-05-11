@@ -1,22 +1,61 @@
 extends:
   - recommended
 
-apis:
-  main:
-    root: ./openapi.yaml
-  secondary:
-    root: ./openapi-secondary.yaml
-  project:
-    root: ./docs/project-delivery.yaml
+# Search configuration
+search: {}
 
-# stats:
-#  fileExtensions: true
+# Breadcrumbs configuration
+breadcrumbs: {}
+
+# SEO configuration
+seo:
+  title: "Local AI Worker Portal"
+
+# Logo and favicon configuration
+# logo:
+#   src: images/logo.svg
+#   favicon: images/favicon.png
+#   link: /
+
+# API definitions
+apis:
+  apis/openapi.yaml:
+    root: apis/openapi.yaml
+  apis/openapi-secondary.yaml:
+    root: apis/openapi-secondary.yaml
+
+# API catalog configuration
+catalogClassic:
+  api-catalog:
+    title: "API Catalog"
+    slug: /api-catalog/
+    description: "Explore the APIs for the Local AI Worker."
+    directory: ./apis/
+    includeByMetadata:
+      all: true
+    filters:
+      - title
+
+# Footer configuration
+footer:
+  copyrightText: "© 2026 Local AI Worker"
+  items:
+    - group: Product
+      items:
+        - label: Documentation
+          page: docs/index.md
+        - label: "API Catalog"
+          page: /api-catalog/
+    - group: Community
+      items:
+        - label: GitHub
+          href: https://github.com/
 
 navbar:
   items:
-    - page: /index.md
-      label: Home
-
-requiresLogin: true
-
-residency: https://app.lab6.blueharvest.cloud
+    - label: Home
+      page: index.page.tsx
+    - label: Documentation
+      page: docs/index.md
+    - label: "API Catalog"
+      page: /api-catalog/
