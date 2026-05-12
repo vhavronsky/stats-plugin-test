@@ -755,3 +755,22 @@ components:
           examples:
             - 2
       additionalProperties: false
+    testComponent:
+      type: object
+      properties:
+        id:
+          type: string
+          readOnly: true
+          examples:
+            - rpt_abc987def123
+        startDate:
+          type: string
+          examples:
+            - '2023-01-01T00:00:00Z'
+          format: date-time
+        endDate:
+          type: string
+          examples:
+            - '2023-02-01T00:00:00Z'
+          format: date-time
+      additionalProperties: false
